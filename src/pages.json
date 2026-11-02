@@ -1,0 +1,124 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {}
+  },
+  "pages": [
+    {
+      "path": "pages/today/today",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "今日",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/records/records",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "记录"
+      }
+    },
+    {
+      "path": "pages/stats/stats",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "统计"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/record-edit/record-edit",
+      "style": {
+        "navigationBarTitleText": "记录详情",
+        "navigationBarBackgroundColor": "#fff8f5"
+      }
+    },
+    {
+      "path": "pages/baby-profile/baby-profile",
+      "style": {
+        "navigationBarTitleText": "宝宝档案",
+        "navigationBarBackgroundColor": "#fff8f5"
+      }
+    },
+    {
+      "path": "pages/baby-list/baby-list",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "宝宝"
+      }
+    },
+    {
+      "path": "pages/family/family",
+      "style": {
+        "navigationBarTitleText": "家庭与成员",
+        "navigationBarBackgroundColor": "#fff8f5"
+      }
+    },
+    {
+      "path": "pages/family-join/family-join",
+      "style": {
+        "navigationBarTitleText": "加入家庭",
+        "navigationBarBackgroundColor": "#fff8f5"
+      }
+    },
+    {
+      "path": "pages/sync/sync",
+      "style": {
+        "navigationBarTitleText": "云同步",
+        "navigationBarBackgroundColor": "#fff8f5"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宝宝喂养日记",
+    "navigationBarBackgroundColor": "#fff8f5",
+    "backgroundColor": "#fff8f5",
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+      "van-button": "/wxcomponents/@vant/weapp/button/index",
+      "van-stepper": "/wxcomponents/@vant/weapp/stepper/index",
+      "van-switch": "/wxcomponents/@vant/weapp/switch/index",
+      "van-icon": "/wxcomponents/@vant/weapp/icon/index"
+    }
+  },
+  "tabBar": {
+    "color": "#a39ca0",
+    "selectedColor": "#ff7b8b",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/today/today",
+        "text": "今日",
+        "iconPath": "static/tabbar/today.png",
+        "selectedIconPath": "static/tabbar/today-active.png"
+      },
+      {
+        "pagePath": "pages/records/records",
+        "text": "记录",
+        "iconPath": "static/tabbar/records.png",
+        "selectedIconPath": "static/tabbar/records-active.png"
+      },
+      {
+        "pagePath": "pages/stats/stats",
+        "text": "统计",
+        "iconPath": "static/tabbar/stats.png",
+        "selectedIconPath": "static/tabbar/stats-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png"
+      }
+    ]
+  }
+}

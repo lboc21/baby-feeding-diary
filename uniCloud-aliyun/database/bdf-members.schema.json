@@ -1,0 +1,55 @@
+{
+  "bsonType": "object",
+  "required": ["openid", "token"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "openid": {
+      "bsonType": "string",
+      "description": "身份键：微信 openid，或设备身份 dev_xxx（测试号/免 AppSecret 降级）。只在云端使用，不下发"
+    },
+    "loginType": {
+      "bsonType": "string",
+      "description": "登录方式：wechat 微信登录 / device 设备身份"
+    },
+    "token": {
+      "bsonType": "string",
+      "description": "客户端凭证，登录时签发，换手机重新登录可拿回"
+    },
+    "familyCode": {
+      "bsonType": "string",
+      "description": "所属家庭码，空字符串表示尚未加入任何家庭"
+    },
+    "memberId": {
+      "bsonType": "string",
+      "description": "成员 ID，家庭内唯一"
+    },
+    "nickname": {
+      "bsonType": "string",
+      "description": "备注名，本人与超管都可修改"
+    },
+    "role": {
+      "bsonType": "string",
+      "description": "角色：owner 超管 / editor 共同记录 / viewer 仅查看"
+    },
+    "active": {
+      "bsonType": "bool",
+      "description": "是否在家庭内，被移出时置 false"
+    },
+    "joinedAt": {
+      "bsonType": "number",
+      "description": "加入家庭时间"
+    },
+    "updatedAt": {
+      "bsonType": "number",
+      "description": "最后修改时间"
+    }
+  }
+}

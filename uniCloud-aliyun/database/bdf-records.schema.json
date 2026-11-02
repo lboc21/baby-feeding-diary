@@ -1,0 +1,59 @@
+{
+  "bsonType": "object",
+  "required": ["syncCode", "id"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "syncCode": {
+      "bsonType": "string",
+      "description": "家庭码，用于隔离不同家庭的数据"
+    },
+    "babyId": {
+      "bsonType": "string",
+      "description": "所属宝宝 ID，旧数据可能为空，拉取时归到家庭第一个宝宝"
+    },
+    "id": {
+      "bsonType": "string",
+      "description": "客户端记录 ID"
+    },
+    "type": {
+      "bsonType": "string",
+      "description": "记录类型：feeding/diaper/sleep/growth/temperature/medicine/jaundice/supplement/solid"
+    },
+    "time": {
+      "bsonType": "number",
+      "description": "记录发生时间"
+    },
+    "payload": {
+      "bsonType": "object",
+      "description": "类型专属字段"
+    },
+    "note": {
+      "bsonType": "string",
+      "description": "备注"
+    },
+    "createdAt": {
+      "bsonType": "number",
+      "description": "创建时间"
+    },
+    "updatedAt": {
+      "bsonType": "number",
+      "description": "客户端最后修改时间"
+    },
+    "deleted": {
+      "bsonType": "bool",
+      "description": "软删除标记"
+    },
+    "serverUpdatedAt": {
+      "bsonType": "number",
+      "description": "服务端更新时间，用于增量拉取"
+    }
+  }
+}

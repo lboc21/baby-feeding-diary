@@ -1,0 +1,67 @@
+{
+  "bsonType": "object",
+  "required": ["syncCode", "babyId"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "syncCode": {
+      "bsonType": "string",
+      "description": "家庭码，与 bdf-families.code 同值"
+    },
+    "babyId": {
+      "bsonType": "string",
+      "description": "宝宝 ID，家庭内唯一"
+    },
+    "id": {
+      "bsonType": "string",
+      "description": "旧版单宝宝档案 ID，仅用于迁移兼容"
+    },
+    "name": {
+      "bsonType": "string",
+      "description": "宝宝昵称"
+    },
+    "gender": {
+      "bsonType": "string",
+      "description": "性别：boy/girl/unknown"
+    },
+    "birthday": {
+      "bsonType": "string",
+      "description": "出生日期 YYYY-MM-DD"
+    },
+    "avatar": {
+      "bsonType": "string",
+      "description": "头像 emoji"
+    },
+    "birthHeight": {
+      "bsonType": "string",
+      "description": "出生身高 cm"
+    },
+    "birthWeight": {
+      "bsonType": "string",
+      "description": "出生体重 kg"
+    },
+    "profileCompleted": {
+      "bsonType": "bool",
+      "description": "档案是否填写完整（昵称与生日都已填）"
+    },
+    "deleted": {
+      "bsonType": "bool",
+      "description": "软删除标记"
+    },
+    "updatedAt": {
+      "bsonType": "number",
+      "description": "客户端最后修改时间"
+    },
+    "serverUpdatedAt": {
+      "bsonType": "number",
+      "description": "服务端更新时间"
+    }
+  }
+}

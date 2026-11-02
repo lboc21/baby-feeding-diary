@@ -1,0 +1,11 @@
+node_modules/
+dist/
+unpackage/
+src/wxcomponents/
+.DS_Store
+*.log
+scripts/.smoke.bundle.cjs
+
+# 本地私有配置（含密钥），不要提交
+.env.local
+src/config/private.js

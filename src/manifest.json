@@ -1,0 +1,39 @@
+{
+  "name": "宝宝喂养日记",
+  "appid": "__UNI__DEMOAPP",
+  "description": "记录宝宝喂养、睡眠、健康与成长的小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3
+  },
+  "quickapp": {},
+  "mp-weixin": {
+    "appid": "wx0000000000000000",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "enhance": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "optimization": {
+      "subPackages": true
+    },
+    "lazyCodeLoading": "requiredComponents"
+  },
+  "uniCloud": {
+    "provider": "aliyun",
+    "spaceId": "",
+    "clientSecret": "",
+    "endpoint": "https://api.next.bspapp.com"
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

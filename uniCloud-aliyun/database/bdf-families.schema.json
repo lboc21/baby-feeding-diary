@@ -1,0 +1,27 @@
+{
+  "bsonType": "object",
+  "required": ["code"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "code": {
+      "bsonType": "string",
+      "description": "家庭码，创建时生成，同时作为记录与宝宝档案的 syncCode"
+    },
+    "ownerId": {
+      "bsonType": "string",
+      "description": "超管 memberId"
+    },
+    "createdAt": {
+      "bsonType": "number",
+      "description": "创建时间"
+    }
+  }
+}

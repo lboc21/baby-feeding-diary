@@ -1,0 +1,39 @@
+{
+  "bsonType": "object",
+  "required": ["code", "familyCode", "role"],
+  "permission": {
+    "read": false,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "code": {
+      "bsonType": "string",
+      "description": "6 位邀请码，可重复使用至过期"
+    },
+    "familyCode": {
+      "bsonType": "string",
+      "description": "被邀请加入的家庭码"
+    },
+    "role": {
+      "bsonType": "string",
+      "description": "加入后的角色：editor 共同记录 / viewer 仅查看"
+    },
+    "createdBy": {
+      "bsonType": "string",
+      "description": "发起邀请的成员 memberId"
+    },
+    "expireAt": {
+      "bsonType": "number",
+      "description": "过期时间戳，默认 7 天"
+    },
+    "usedBy": {
+      "bsonType": "array",
+      "description": "已使用该邀请的 openid 列表，用于防止超量加入"
+    }
+  }
+}

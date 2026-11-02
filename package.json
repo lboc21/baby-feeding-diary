@@ -1,0 +1,33 @@
+{
+  "name": "baby-feeding-diary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "宝宝喂养日记 · uni-app + Vant Weapp 微信小程序",
+  "scripts": {
+    "postinstall": "node scripts/copy-vant.js",
+    "vant:copy": "node scripts/copy-vant.js",
+    "icons": "node scripts/gen-icons.js",
+    "test": "node scripts/smoke-test.js",
+    "dev:mp-weixin": "npm run vant:copy && uni -p mp-weixin",
+    "build:mp-weixin": "npm run vant:copy && uni build -p mp-weixin",
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build -p h5"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-5030420261029001",
+    "@dcloudio/uni-cloud": "3.0.0-5030420261029001",
+    "@dcloudio/uni-components": "3.0.0-5030420261029001",
+    "@dcloudio/uni-h5": "3.0.0-5030420261029001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-5030420261029001",
+    "@vant/weapp": "^1.11.7",
+    "vue": "3.4.21"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "3.0.0-5030420261029001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-5030420261029001",
+    "vite": "5.2.8"
+  },
+  "uni-app": {
+    "scripts": {}
+  }
+}

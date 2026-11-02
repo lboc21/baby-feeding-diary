@@ -1,0 +1,8 @@
+{
+  "name": "baby-diary",
+  "version": "1.0.0",
+  "description": "宝宝喂养日记云对象：记录同步与备份",
+  "main": "index.obj.js",
+  "dependencies": {},
+  "extensions": {}
+}
